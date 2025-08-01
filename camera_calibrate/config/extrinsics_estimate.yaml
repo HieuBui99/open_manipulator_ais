@@ -1,0 +1,7 @@
+/**:
+   ros__parameters:
+      square_size_mm: 30.0
+      chessboard_size: [8,5]
+      serial_no: "_218622274409"
+      eye_out_of_hand: False
+   
