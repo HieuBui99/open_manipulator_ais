@@ -18,6 +18,7 @@ setup(
             glob('config/open_manipulator_x/*')),
         (os.path.join('share', package_name, 'config/omy_3m'), glob('config/omy_3m/*')),
         (os.path.join('share', package_name, 'config/omy_f3m'), glob('config/omy_f3m/*')),
+        (os.path.join('share', package_name, 'config'), glob('config/*.yaml')),
         (os.path.join('share', package_name, 'config/omy_f3m_follower_ai'),
             glob('config/omy_f3m_follower_ai/*')),
         (os.path.join('share', package_name, 'config/omy_l100_leader_ai'),
@@ -39,6 +40,10 @@ setup(
         'console_scripts': [
             'joint_trajectory_executor = open_manipulator_bringup.joint_trajectory_executor:main',
             'om_create_udev_rules = open_manipulator_bringup.om_create_udev_rules:main',
+            # 'pose_publish = open_manipulator_bringup.pose_publish:main',
+            'pose_publish_tf = open_manipulator_bringup.pose_publish_tf:main',
+            'move_to_init_position = open_manipulator_bringup.move_to_init_pose_real:main',
+            'safe_tele_op = open_manipulator_bringup.safe_tele_op:main',
         ],
     },
 )

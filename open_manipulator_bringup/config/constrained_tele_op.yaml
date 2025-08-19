@@ -1,0 +1,17 @@
+constrain_on_orientation: True
+mirror_y_axis: False
+Boundary:
+  x_min: 0.15
+  x_max: 0.45
+  y_min: -0.3
+  y_max: 0.3
+  z_min: 0.005
+  z_max: 0.08
+Init_PD:
+  Kp: 0.03
+  Kd: 0.005
+  tol_pos: 0.01
+Teleoperation:
+  Kp: 0.15
+  Kd: 0.004
+
