@@ -22,7 +22,7 @@ Cameras:
 
 Human operator uses the leader device to demonstrate motions and the follower will replicate the exact motions.
 
-![](./assets/setup.jpeg)
+![](./assets/setup.png)
 
 ### Recording
 Images from all 3 cameras and joint position data are published via ROS2.
