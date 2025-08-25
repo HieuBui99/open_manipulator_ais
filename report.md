@@ -52,6 +52,6 @@ We used [Diffusion Policy](https://diffusion-policy.cs.columbia.edu/diffusion_po
 * Batch size: 32
 * Number of diffusion steps: 100
 
-<video width="320" height="240" controls>
-  <source src="assets/fail1.mp4" type="video/mp4">
-</video>
+
+<iframe src="https://drive.google.com/file/d/12gb8GoxHVwPQbOu8kAT8HpcCRvNknYrf/preview" ></iframe>
+  
