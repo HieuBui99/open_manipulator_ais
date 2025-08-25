@@ -22,6 +22,8 @@ Cameras:
 
 Human operator uses the leader device to demonstrate motions and the follower will replicate the exact motions.
 
+![](./assets/setup.jpeg)
+
 ### Recording
 Images from all 3 cameras and joint position data are published via ROS2.
 
@@ -36,7 +38,7 @@ The data is saved in [Lerobot](https://github.com/huggingface/lerobot) dataset f
 * **observation.images.cam_scene1**: `480x640x3` image
 * **observation.images.cam_scene2**: `480x640x3` image
 
-Some dataset we have collected:
+Some dataset we have collected. You can click on the link to see the visualization
 
 * [Pushing + Grasping](https://huggingface.co/spaces/lerobot/visualize_dataset?path=%2Fhieu1344%2Fomy_baseline%2Fepisode_0) 
 * [Pushing only](https://huggingface.co/spaces/lerobot/visualize_dataset?path=%2Fhieu1344%2Fomy_pushing%2Fepisode_0%3Ft%3D21)
@@ -53,5 +55,15 @@ We used [Diffusion Policy](https://diffusion-policy.cs.columbia.edu/diffusion_po
 * Number of diffusion steps: 100
 
 
-<iframe src="https://drive.google.com/file/d/12gb8GoxHVwPQbOu8kAT8HpcCRvNknYrf/preview" ></iframe>
-  
+Below we show the result of training the model with the [Pushsing with 2 cam](https://huggingface.co/spaces/lerobot/visualize_dataset?path=%2Fhieu1344%2Fomy_push_2_obj_2cam%2Fepisode_0%3Ft%3D10) as this has the best result. But the success rate is still only about 10%.
+
+Some success cases:
+* [Result 1](https://drive.google.com/file/d/1DOHeOobsvOWpHsytsDVXeWtKvz5onu6G/view?usp=drive_link)
+* [Result 2](https://drive.google.com/file/d/1jxNaDCZv5bxRAhCMruqrQ4bLHHEeYz0Y/view?usp=drive_link)
+* [Result 3](https://drive.google.com/file/d/1iNq3TkjyGWDGEjmLFrp78wFExq23jsh8/view?usp=drive_link)
+
+Failure cases:
+* [Failure 1](https://drive.google.com/file/d/12gb8GoxHVwPQbOu8kAT8HpcCRvNknYrf/view?usp=drive_link)
+* [Failure 2](https://drive.google.com/file/d/1GhDSz7GMWP_mjkDPalDUAsAXudN1IVQi/view?usp=drive_link)
+* [Failure 3](https://drive.google.com/file/d/1MVJoMDV9uahXoaEhPiLHk2FbE9zaW1qb/view?usp=drive_link)
+
